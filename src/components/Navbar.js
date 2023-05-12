@@ -19,9 +19,9 @@ function Navbar() {
           <Link href="/blog">Blog</Link>
         </li>
         {session ? ( <li onClick={()=>signOut() }>
-          <Link href="/api/auth/signout">Sign Out</Link>
+          <a href="/api/auth/signout">Sign Out</a>
         </li>): <li onClick={()=>signIn('github') }>
-          <Link href="/api/auth/signin">Sign in</Link>
+          <a href="/api/auth/signin">Sign in</a>
         </li>}
        
 
